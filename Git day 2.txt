@@ -1,0 +1,1226 @@
+
+Thunderobot@DESKTOP-O2G7C9A MINGW64 ~
+$ cd /c/Git/ws
+
+Thunderobot@DESKTOP-O2G7C9A MINGW64 /c/Git/ws (master)
+$ git commit
+[master 518d86e] Привет
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ rename 1.html => 12345.html (100%)
+
+Thunderobot@DESKTOP-O2G7C9A MINGW64 /c/Git/ws (master)
+$ git --all --graph
+unknown option: --all
+usage: git [-v | --version] [-h | --help] [-C <path>]
+           [--exec-path[=<path>]] [--html-path] [--man
+           [-p | --paginate | -P | --no-pager] [--no-r
+           [--git-dir=<path>] [--work-tree=<path>] [--
+           [--config-env=<name>=<envvar>] <command> [<
+
+Thunderobot@DESKTOP-O2G7C9A MINGW64 /c/Git/ws (master)
+$ git log --oneline --all --graph
+* 518d86e (HEAD -> master) Привет
+* 7047af1 12336474
+* 631f185 Good morning People
+* 7279f53 Privet Mir Hello <h1></h1>
+* 14d5434 Hello world
+* 6f80358 Initial commit
+
+Thunderobot@DESKTOP-O2G7C9A MINGW64 /c/Git/ws (master)
+$ git checkout ^C
+
+Thunderobot@DESKTOP-O2G7C9A MINGW64 /c/Git/ws (master)
+$ git checkout 518d86e
+Note: switching to '518d86e'.
+
+You are in 'detached HEAD' state. You can look around,
+changes and commit them, and you can discard any commi
+state without impacting any branches by switching back
+
+If you want to create a new branch to retain commits y
+do so (now or later) by using -c with the switch comma
+
+  git switch -c <new-branch-name>
+
+Or undo this operation with:
+
+  git switch -
+
+Turn off this advice by setting config variable advice
+
+HEAD is now at 518d86e Привет
+
+Thunderobot@DESKTOP-O2G7C9A MINGW64 /c/Git/ws ((518d86
+$ cd /c/Git/ws
+
+Thunderobot@DESKTOP-O2G7C9A MINGW64 /c/Git/ws ((518d86
+$ cd /c/Git
+
+Thunderobot@DESKTOP-O2G7C9A MINGW64 /c/Git
+$ cd /c/Git/ws
+
+Thunderobot@DESKTOP-O2G7C9A MINGW64 /c/Git/ws ((518d86
+$ git checkin  518d86e
+git: 'checkin' is not a git command. See 'git --help'.
+
+The most similar commands are
+        check-ignore
+        checkout
+
+Thunderobot@DESKTOP-O2G7C9A MINGW64 /c/Git/ws ((518d86
+$ cd /C/Users/Thunderobot/Desktop/Программирование/ws
+
+Thunderobot@DESKTOP-O2G7C9A MINGW64 /C/Users/Thunderobе/ws (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be comm
+  (use "git restore <file>..." to discard changes in w
+        modified:   page.html
+
+no changes added to commit (use "git add" and/or "git
+
+Thunderobot@DESKTOP-O2G7C9A MINGW64 /C/Users/Thunderobе/ws (master)
+$ git add .
+
+Thunderobot@DESKTOP-O2G7C9A MINGW64 /C/Users/Thunderobе/ws (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   page.html
+
+
+Thunderobot@DESKTOP-O2G7C9A MINGW64 /C/Users/Thunderobе/ws (master)
+$ git commit
+[master d102992] commit
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+
+Thunderobot@DESKTOP-O2G7C9A MINGW64 /C/Users/Thunderobе/ws (master)
+$ gif config --global user.name "Prytkov Matvej"
+bash: gif: command not found
+
+Thunderobot@DESKTOP-O2G7C9A MINGW64 /C/Users/Thunderobе/ws (master)
+$ git  config --global user.name "Prytkov Matvej"
+
+Thunderobot@DESKTOP-O2G7C9A MINGW64 /C/Users/Thunderobе/ws (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+Thunderobot@DESKTOP-O2G7C9A MINGW64 /C/Users/Thunderobе/ws (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+Thunderobot@DESKTOP-O2G7C9A MINGW64 /C/Users/Thunderobе/ws (master)
+$ git diff
+
+Thunderobot@DESKTOP-O2G7C9A MINGW64 /C/Users/Thunderobе/ws (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+Thunderobot@DESKTOP-O2G7C9A MINGW64 /C/Users/Thunderobе/ws (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be comm
+  (use "git restore <file>..." to discard changes in w
+        modified:   readme
+
+no changes added to commit (use "git add" and/or "git
+
+Thunderobot@DESKTOP-O2G7C9A MINGW64 /C/Users/Thunderobе/ws (master)
+$ git commit -a
+[master 39271da] Readme
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+
+Thunderobot@DESKTOP-O2G7C9A MINGW64 /C/Users/Thunderobе/ws (master)
+$ git commit
+On branch master
+nothing to commit, working tree clean
+
+Thunderobot@DESKTOP-O2G7C9A MINGW64 /C/Users/Thunderobе/ws (master)
+$ git diff readme
+
+Thunderobot@DESKTOP-O2G7C9A MINGW64 /C/Users/Thunderobе/ws (master)
+$ git diff
+
+Thunderobot@DESKTOP-O2G7C9A MINGW64 /C/Users/Thunderobе/ws (master)
+$ git reset --gard
+error: unknown option `gard'
+usage: git reset [--mixed | --soft | --hard | --merge
+   or: git reset [-q] [<tree-ish>] [--] <pathspec>...
+   or: git reset [-q] [--pathspec-from-file [--pathspe
+   or: git reset --patch [<tree-ish>] [--] [<pathspec>
+   or: DEPRECATED: git reset [-q] [--stdin [-z]] [<tre
+
+    -q, --[no-]quiet      be quiet, only report errors
+    --no-refresh          skip refreshing the index af
+    --refresh             opposite of --no-refresh
+    --mixed               reset HEAD and index
+    --soft                reset only HEAD
+    --hard                reset HEAD, index and workin
+    --merge               reset HEAD, index and workin
+    --keep                reset HEAD but keep local ch
+    --[no-]recurse-submodules[=<reset>]
+                          control recursive updating o
+    -p, --[no-]patch      select hunks interactively
+    -N, --[no-]intent-to-add
+                          record only the fact that relater
+    --[no-]pathspec-from-file <file>
+                          read pathspec from file
+    --[no-]pathspec-file-nul
+                          with --pathspec-from-file, pated with NUL character
+    -z                    DEPRECATED (use --pathspec-fe separated with NUL character
+    --[no-]stdin          DEPRECATED (use --pathspec-fpaths from <stdin>
+
+
+Thunderobot@DESKTOP-O2G7C9A MINGW64 /C/Users/Thunderobе/ws (master)
+$ git reset --hard
+HEAD is now at 39271da Readme
+
+Thunderobot@DESKTOP-O2G7C9A MINGW64 /C/Users/Thunderobе/ws (master)
+$ git log --oneline
+39271da (HEAD -> master) Readme
+d102992 commit
+1b24b08 (myexp) experimental design
+a2fe8d7 double hr in footer
+fc6c790 (serverfix) with logo title
+8b1c401 Merge remote-tracking branch 'origin/master'
+f102b3e menu
+113ef79 change readme
+117373c with issue 30 (logo)
+8c854c1 (hf200) hf200 (required alt attr)
+4d869f3 (issue30) logo resized
+2dac65b with issue 20
+ffa22b5 (issue21) Main forum
+56ac931 issue 154 (eng)
+4f60d6a forum
+d0bba87 Merge branch 'issue20'
+16c87d9 hf153 (h1->h2)
+94a37d7 issue 20 (with footer)
+2ae90b6 with gitignore
+63ecb04 (tag: ver.1.3-lw, tag: ver.1.3, test2) index.h
+93c34d7 with page.html
+bfc69c2 with updated robots.txt
+79cfbd2 with robots.txt
+
+Thunderobot@DESKTOP-O2G7C9A MINGW64 /C/Users/Thunderobе/ws (master)
+$ git init
+Reinitialized existing Git repository in C:/Users/Thunование/ws/.git/
+
+Thunderobot@DESKTOP-O2G7C9A MINGW64 /C/Users/Thunderobе/ws (master)
+$ git commit
+On branch master
+nothing to commit, working tree clean
+
+Thunderobot@DESKTOP-O2G7C9A MINGW64 /C/Users/Thunderobе/ws (master)
+$ git log --oneline --since=2023-11-24
+
+Thunderobot@DESKTOP-O2G7C9A MINGW64 /C/Users/Thunderobе/ws (master)
+$ git branch
+  hf200
+  issue21
+  issue30
+* master
+  myexp
+  serverfix
+  test
+  test2
+  ver.1.0
+
+Thunderobot@DESKTOP-O2G7C9A MINGW64 /C/Users/Thunderobе/ws (master)
+$ git branch iss53
+
+Thunderobot@DESKTOP-O2G7C9A MINGW64 /C/Users/Thunderobе/ws (master)
+$ git log --oneline --all --graph
+* 39271da (HEAD -> master, iss53) Readme
+* d102992 commit
+* 1b24b08 (myexp) experimental design
+* a2fe8d7 double hr in footer
+* fc6c790 (serverfix) with logo title
+*   8b1c401 Merge remote-tracking branch 'origin/maste
+|\
+| * f102b3e menu
+* | 113ef79 change readme
+|/
+*   117373c with issue 30 (logo)
+|\
+| * 4d869f3 (issue30) logo resized
+* | 8c854c1 (hf200) hf200 (required alt attr)
+|/
+*   2dac65b with issue 20
+|\
+| * ffa22b5 (issue21) Main forum
+| * 4f60d6a forum
+* | 56ac931 issue 154 (eng)
+|/
+*   d0bba87 Merge branch 'issue20'
+|\
+
+Thunderobot@DESKTOP-O2G7C9A MINGW64 /C/Users/Thunderobе/ws (master)
+$ git branch
+  hf200
+  iss53
+  issue21
+  issue30
+* master
+  myexp
+  serverfix
+  test
+  test2
+  ver.1.0
+
+Thunderobot@DESKTOP-O2G7C9A MINGW64 /C/Users/Thunderobе/ws (master)
+$ git branch iss23
+
+Thunderobot@DESKTOP-O2G7C9A MINGW64 /C/Users/Thunderobе/ws (master)
+$ git branch iss53
+fatal: a branch named 'iss53' already exists
+
+Thunderobot@DESKTOP-O2G7C9A MINGW64 /C/Users/Thunderobе/ws (master)
+$ git checkout iss53
+Switched to branch 'iss53'
+
+Thunderobot@DESKTOP-O2G7C9A MINGW64 /C/Users/Thunderobе/ws (iss53)
+$ git branch
+  hf200
+  iss23
+* iss53
+  issue21
+  issue30
+  master
+  myexp
+  serverfix
+  test
+  test2
+  ver.1.0
+
+Thunderobot@DESKTOP-O2G7C9A MINGW64 /C/Users/Thunderobе/ws (iss53)
+$  git log --oneline --all --graph
+* 39271da (HEAD -> iss53, master, iss23) Readme
+* d102992 commit
+* 1b24b08 (myexp) experimental design
+* a2fe8d7 double hr in footer
+* fc6c790 (serverfix) with logo title
+*   8b1c401 Merge remote-tracking branch 'origin/maste
+|\
+| * f102b3e menu
+* | 113ef79 change readme
+|/
+*   117373c with issue 30 (logo)
+|\
+| * 4d869f3 (issue30) logo resized
+* | 8c854c1 (hf200) hf200 (required alt attr)
+|/
+*   2dac65b with issue 20
+|\
+| * ffa22b5 (issue21) Main forum
+| * 4f60d6a forum
+* | 56ac931 issue 154 (eng)
+|/
+*   d0bba87 Merge branch 'issue20'
+|\
+ ESCOD
+* 39271da (HEAD -> iss53, master, iss23) Readme
+* d102992 commit
+* 1b24b08 (myexp) experimental design
+* a2fe8d7 double hr in footer
+* fc6c790 (serverfix) with logo title
+*   8b1c401 Merge remote-tracking branch 'origin/maste
+|\
+| * f102b3e menu
+* | 113ef79 change readme
+|/
+*   117373c with issue 30 (logo)
+|\
+| * 4d869f3 (issue30) logo resized
+* | 8c854c1 (hf200) hf200 (required alt attr)
+|/
+*   2dac65b with issue 20
+|\
+| * ffa22b5 (issue21) Main forum
+| * 4f60d6a forum
+* | 56ac931 issue 154 (eng)
+|/
+*   d0bba87 Merge branch 'issue20'
+|\
+ ESCOD
+* 39271da (HEAD -> iss53, master, iss23) Readme
+* d102992 commit
+* 1b24b08 (myexp) experimental design
+* a2fe8d7 double hr in footer
+* fc6c790 (serverfix) with logo title
+*   8b1c401 Merge remote-tracking branch 'origin/maste
+|\
+| * f102b3e menu
+* | 113ef79 change readme
+|/
+*   117373c with issue 30 (logo)
+|\
+| * 4d869f3 (issue30) logo resized
+* | 8c854c1 (hf200) hf200 (required alt attr)
+|/
+*   2dac65b with issue 20
+|\
+| * ffa22b5 (issue21) Main forum
+| * 4f60d6a forum
+* | 56ac931 issue 154 (eng)
+|/
+*   d0bba87 Merge branch 'issue20'
+|\
+ ESCOD
+* 39271da (HEAD -> iss53, master, iss23) Readme
+* d102992 commit
+* 1b24b08 (myexp) experimental design
+* a2fe8d7 double hr in footer
+* fc6c790 (serverfix) with logo title
+*   8b1c401 Merge remote-tracking branch 'origin/maste
+|\
+| * f102b3e menu
+* | 113ef79 change readme
+|/
+*   117373c with issue 30 (logo)
+|\
+| * 4d869f3 (issue30) logo resized
+* | 8c854c1 (hf200) hf200 (required alt attr)
+|/
+*   2dac65b with issue 20
+|\
+| * ffa22b5 (issue21) Main forum
+| * 4f60d6a forum
+* | 56ac931 issue 154 (eng)
+|/
+*   d0bba87 Merge branch 'issue20'
+|\
+ ESCOD
+* 39271da (HEAD -> iss53, master, iss23) Readme
+* d102992 commit
+* 1b24b08 (myexp) experimental design
+* a2fe8d7 double hr in footer
+* fc6c790 (serverfix) with logo title
+*   8b1c401 Merge remote-tracking branch 'origin/maste
+|\
+| * f102b3e menu
+* | 113ef79 change readme
+|/
+*   117373c with issue 30 (logo)
+|\
+| * 4d869f3 (issue30) logo resized
+* | 8c854c1 (hf200) hf200 (required alt attr)
+|/
+*   2dac65b with issue 20
+|\
+| * ffa22b5 (issue21) Main forum
+| * 4f60d6a forum
+* | 56ac931 issue 154 (eng)
+|/
+*   d0bba87 Merge branch 'issue20'
+|\
+
+Thunderobot@DESKTOP-O2G7C9A MINGW64 /C/Users/Thunderobе/ws (iss53)
+$ git checkout issue30
+Switched to branch 'issue30'
+
+Thunderobot@DESKTOP-O2G7C9A MINGW64 /C/Users/Thunderobе/ws (issue30)
+$ git checkout  2dac65b
+Note: switching to '2dac65b'.
+
+You are in 'detached HEAD' state. You can look around,
+changes and commit them, and you can discard any commi
+state without impacting any branches by switching back
+
+If you want to create a new branch to retain commits y
+do so (now or later) by using -c with the switch comma
+
+  git switch -c <new-branch-name>
+
+Or undo this operation with:
+
+  git switch -
+
+Turn off this advice by setting config variable advice
+
+HEAD is now at 2dac65b with issue 20
+
+Thunderobot@DESKTOP-O2G7C9A MINGW64 /C/Users/Thunderobе/ws ((2dac65b...))
+$ git checkout issue30
+Previous HEAD position was 2dac65b with issue 20
+Switched to branch 'issue30'
+
+Thunderobot@DESKTOP-O2G7C9A MINGW64 /C/Users/Thunderobе/ws (issue30)
+$  git log --oneline --all --graph
+* 39271da (master, iss53, iss23) Readme
+* d102992 commit
+* 1b24b08 (myexp) experimental design
+* a2fe8d7 double hr in footer
+* fc6c790 (serverfix) with logo title
+*   8b1c401 Merge remote-tracking branch 'origin/maste
+|\
+| * f102b3e menu
+* | 113ef79 change readme
+|/
+*   117373c with issue 30 (logo)
+|\
+| * 4d869f3 (HEAD -> issue30) logo resized
+* | 8c854c1 (hf200) hf200 (required alt attr)
+|/
+*   2dac65b with issue 20
+|\
+| * ffa22b5 (issue21) Main forum
+| * 4f60d6a forum
+* | 56ac931 issue 154 (eng)
+|/
+*   d0bba87 Merge branch 'issue20'
+|\
+| * 94a37d7 issue 20 (with footer)
+* | 16c87d9 hf153 (h1->h2)
+|/
+* 2ae90b6 with gitignore
+| * 6cc4588 (test) with footer
+|/
+| * 4f5d1ff (ver.1.0) last
+|/
+* 63ecb04 (tag: ver.1.3-lw, tag: ver.1.3, test2) index
+* 93c34d7 with page.html
+* bfc69c2 with updated robots.txt
+* 79cfbd2 with robots.txt
+* 3a1c684 (tag: ver.1.0) first update
+* dbfc836 (tag: ver.0.99) Initial version of my site
+
+Thunderobot@DESKTOP-O2G7C9A MINGW64 /C/Users/Thunderobе/ws (issue30)
+$ git merge hf200
+Auto-merging index.htm
+CONFLICT (content): Merge conflict in index.htm
+Automatic merge failed; fix conflicts and then commit
+
+Thunderobot@DESKTOP-O2G7C9A MINGW64 /C/Users/Thunderobе/ws (issue30|MERGING)
+$ ^C
+
+Thunderobot@DESKTOP-O2G7C9A MINGW64 /C/Users/Thunderobе/ws (issue30|MERGING)
+$ git merge  117373c
+error: Merging is not possible because you have unmerg
+hint: Fix them up in the work tree, and then use 'git
+hint: as appropriate to mark resolution and make a com
+fatal: Exiting because of an unresolved conflict.
+
+Thunderobot@DESKTOP-O2G7C9A MINGW64 /C/Users/Thunderobе/ws (issue30|MERGING)
+$ git checkout master
+error: you need to resolve your current index first
+index.htm: needs merge
+
+Thunderobot@DESKTOP-O2G7C9A MINGW64 /C/Users/Thunderobе/ws (issue30|MERGING)
+$ git merge serverfix
+error: Merging is not possible because you have unmerg
+hint: Fix them up in the work tree, and then use 'git
+hint: as appropriate to mark resolution and make a com
+fatal: Exiting because of an unresolved conflict.
+
+Thunderobot@DESKTOP-O2G7C9A MINGW64 /C/Users/Thunderobе/ws (issue30|MERGING)
+$ git reset
+Unstaged changes after reset:
+M       index.htm
+
+Thunderobot@DESKTOP-O2G7C9A MINGW64 /C/Users/Thunderobе/ws (issue30)
+$ git branch --merged
+  issue21
+* issue30
+  test2
+
+Thunderobot@DESKTOP-O2G7C9A MINGW64 /C/Users/Thunderobе/ws (issue30)
+$ git checkout -b master
+fatal: a branch named 'master' already exists
+
+Thunderobot@DESKTOP-O2G7C9A MINGW64 /C/Users/Thunderobе/ws (issue30)
+$ git switch -c issue56
+Switched to a new branch 'issue56'
+
+Thunderobot@DESKTOP-O2G7C9A MINGW64 /C/Users/Thunderobе/ws (issue56)
+$ git log
+commit 4d869f349f0e2eed880d9418e7951ad3b3ab4098 (HEAD
+Author: Sergey Shuykov <sshuykov@specialist.ru>
+Date:   Sun Jan 21 11:26:14 2018 +0300
+
+    logo resized
+
+commit 2dac65b06306ac3e7a191496c501f4e0ee43d6bb
+Merge: 56ac931 ffa22b5
+Author: Sergey Shuykov <sshuykov@specialist.ru>
+Date:   Sun Jan 21 11:09:49 2018 +0300
+
+    with issue 20
+
+commit ffa22b5b6070bb449f584200f9c97f2bcdb01956 (issue
+Author: Sergey Shuykov <sshuykov@specialist.ru>
+Date:   Sun Jan 21 11:03:34 2018 +0300
+
+    Main forum
+
+commit 56ac9315176e0f722f8ef04c872e5bee60a1e2f3
+Author: Sergey Shuykov <sshuykov@specialist.ru>
+Date:   Sun Jan 21 11:00:24 2018 +0300
+
+
+Thunderobot@DESKTOP-O2G7C9A MINGW64 /C/Users/Thunderobе/ws (issue56)
+$ git log --oneline
+4d869f3 (HEAD -> issue56, issue30) logo resized
+2dac65b with issue 20
+ffa22b5 (issue21) Main forum
+56ac931 issue 154 (eng)
+4f60d6a forum
+d0bba87 Merge branch 'issue20'
+16c87d9 hf153 (h1->h2)
+94a37d7 issue 20 (with footer)
+2ae90b6 with gitignore
+63ecb04 (tag: ver.1.3-lw, tag: ver.1.3, test2) index.h
+93c34d7 with page.html
+bfc69c2 with updated robots.txt
+79cfbd2 with robots.txt
+3a1c684 (tag: ver.1.0) first update
+dbfc836 (tag: ver.0.99) Initial version of my site
+
+Thunderobot@DESKTOP-O2G7C9A MINGW64 /C/Users/Thunderobе/ws (issue56)
+$ git log --all --graph --oneline
+* 39271da (master, iss53, iss23) Readme
+* d102992 commit
+* 1b24b08 (myexp) experimental design
+* a2fe8d7 double hr in footer
+* fc6c790 (serverfix) with logo title
+*   8b1c401 Merge remote-tracking branch 'origin/maste
+|\
+| * f102b3e menu
+* | 113ef79 change readme
+|/
+*   117373c with issue 30 (logo)
+|\
+| * 4d869f3 (HEAD -> issue56, issue30) logo resized
+* | 8c854c1 (hf200) hf200 (required alt attr)
+|/
+*   2dac65b with issue 20
+|\
+| * ffa22b5 (issue21) Main forum
+| * 4f60d6a forum
+* | 56ac931 issue 154 (eng)
+|/
+*   d0bba87 Merge branch 'issue20'
+|\
+
+Thunderobot@DESKTOP-O2G7C9A MINGW64 /C/Users/Thunderobе/ws (issue56)
+$ git status
+On branch issue56
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   .gitignore
+        new file:   index.htm
+        new file:   logo.gif
+        new file:   page.html
+        new file:   readme
+        new file:   scripts/script.js
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be comm
+  (use "git restore <file>..." to discard changes in w
+        modified:   index.htm
+
+
+Thunderobot@DESKTOP-O2G7C9A MINGW64 /C/Users/Thunderobе/ws (issue56)
+$ git add .
+
+Thunderobot@DESKTOP-O2G7C9A MINGW64 /C/Users/Thunderobе/ws (issue56)
+$ git commit
+[issue56 (root-commit) 442a13e] New file
+ 6 files changed, 36 insertions(+)
+ create mode 100644 .gitignore
+ create mode 100644 index.htm
+ create mode 100644 logo.gif
+ create mode 100644 page.html
+ create mode 100644 readme
+ create mode 100644 scripts/script.js
+
+Thunderobot@DESKTOP-O2G7C9A MINGW64 /C/Users/Thunderobе/ws (issue56)
+$ git merge serverfix
+fatal: refusing to merge unrelated histories
+
+Thunderobot@DESKTOP-O2G7C9A MINGW64 /C/Users/Thunderobе/ws (issue56)
+$ git merge 117373c
+fatal: refusing to merge unrelated histories
+
+Thunderobot@DESKTOP-O2G7C9A MINGW64 /C/Users/Thunderobе/ws (issue56)
+$ git  checkout master
+Switched to branch 'master'
+
+Thunderobot@DESKTOP-O2G7C9A MINGW64 /C/Users/Thunderobе/ws (master)
+$ git log --all --graph --oneline
+* 442a13e (issue56) New file
+* 39271da (HEAD -> master, iss53, iss23) Readme
+* d102992 commit
+* 1b24b08 (myexp) experimental design
+* a2fe8d7 double hr in footer
+* fc6c790 (serverfix) with logo title
+*   8b1c401 Merge remote-tracking branch 'origin/maste
+|\
+| * f102b3e menu
+* | 113ef79 change readme
+|/
+*   117373c with issue 30 (logo)
+|\
+| * 4d869f3 (issue30, issu56) logo resized
+* | 8c854c1 (hf200) hf200 (required alt attr)
+|/
+*   2dac65b with issue 20
+|\
+| * ffa22b5 (issue21) Main forum
+| * 4f60d6a forum
+* | 56ac931 issue 154 (eng)
+|/
+*   d0bba87 Merge branch 'issue20'
+
+Thunderobot@DESKTOP-O2G7C9A MINGW64 /C/Users/Thunderobе/ws (master)
+$ git merge myexp
+Already up to date.
+
+Thunderobot@DESKTOP-O2G7C9A MINGW64 /C/Users/Thunderobе/ws (master)
+$ git log --all --graph --oneline
+* 442a13e (issue56) New file
+* 39271da (HEAD -> master, iss53, iss23) Readme
+* d102992 commit
+* 1b24b08 (myexp) experimental design
+* a2fe8d7 double hr in footer
+* fc6c790 (serverfix) with logo title
+*   8b1c401 Merge remote-tracking branch 'origin/maste
+|\
+| * f102b3e menu
+* | 113ef79 change readme
+|/
+*   117373c with issue 30 (logo)
+|\
+| * 4d869f3 (issue30, issu56) logo resized
+* | 8c854c1 (hf200) hf200 (required alt attr)
+|/
+*   2dac65b with issue 20
+|\
+| * ffa22b5 (issue21) Main forum
+| * 4f60d6a forum
+* | 56ac931 issue 154 (eng)
+|/
+*   d0bba87 Merge branch 'issue20'
+
+Thunderobot@DESKTOP-O2G7C9A MINGW64 /C/Users/Thunderobе/ws (master)
+$ git merge issue56
+fatal: refusing to merge unrelated histories
+
+Thunderobot@DESKTOP-O2G7C9A MINGW64 /C/Users/Thunderobе/ws (master)
+$ git checkout return123
+error: pathspec 'return123' did not match any file(s)
+
+Thunderobot@DESKTOP-O2G7C9A MINGW64 /C/Users/Thunderobе/ws (master)
+$ git branch return123456
+
+Thunderobot@DESKTOP-O2G7C9A MINGW64 /C/Users/Thunderobе/ws (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+Thunderobot@DESKTOP-O2G7C9A MINGW64 /C/Users/Thunderobе/ws (master)
+$ git log
+commit 39271dad108c42b83e63d276cd2945cc91878c7b (HEAD ss53, iss23)
+Author: Prytkov Matvej <sshuykov@specialist.ru>
+Date:   Fri Nov 24 10:19:14 2023 +0500
+
+    Readme
+
+commit d10299221a5b432e3c18ca6e4ef5ac295301af09
+Author: Matvey Prytkov <sshuykov@specialist.ru>
+Date:   Fri Nov 24 10:07:36 2023 +0500
+
+    commit
+
+commit 1b24b08ef26452b2683b6f7cd6019ade462844d6 (myexp
+Author: Sergey Shuykov <sshuykov@specialist.ru>
+Date:   Sun Jan 21 14:16:01 2018 +0300
+
+    experimental design
+
+commit a2fe8d7e9190dc376f4bb901e1fc3c0ec10bea5a
+Author: Sergey Shuykov <sshuykov@specialist.ru>
+Date:   Sun Jan 21 14:17:03 2018 +0300
+
+
+Thunderobot@DESKTOP-O2G7C9A MINGW64 /C/Users/Thunderobе/ws (master)
+$ git log --all --graph --oneline
+* 442a13e (issue56) New file
+* 39271da (HEAD -> master, return123456, iss53, iss23)
+* d102992 commit
+* 1b24b08 (myexp) experimental design
+* a2fe8d7 double hr in footer
+* fc6c790 (serverfix) with logo title
+*   8b1c401 Merge remote-tracking branch 'origin/maste
+|\
+| * f102b3e menu
+* | 113ef79 change readme
+|/
+*   117373c with issue 30 (logo)
+|\
+| * 4d869f3 (issue30, issu56) logo resized
+* | 8c854c1 (hf200) hf200 (required alt attr)
+|/
+*   2dac65b with issue 20
+|\
+| * ffa22b5 (issue21) Main forum
+| * 4f60d6a forum
+* | 56ac931 issue 154 (eng)
+|/
+*   d0bba87 Merge branch 'issue20'
+
+Thunderobot@DESKTOP-O2G7C9A MINGW64 /C/Users/Thunderobе/ws (master)
+$ cd /C/Users/Thunderobot/Desktop/Программирование/wsc
+
+Thunderobot@DESKTOP-O2G7C9A MINGW64 /C/Users/Thunderobе/wsc (sf)
+$ git  checkout master
+Switched to branch 'master'
+Your branch is ahead of 'origin/master' by 2 commits.
+  (use "git push" to publish your local commits)
+
+Thunderobot@DESKTOP-O2G7C9A MINGW64 /C/Users/Thunderobе/wsc (master)
+$ git checkout -b iss57
+Switched to a new branch 'iss57'
+
+Thunderobot@DESKTOP-O2G7C9A MINGW64 /C/Users/Thunderobе/wsc (iss57)
+$ git log --all --graph --oneline
+* fc6c790 (second/serverfix, second/master, origin/serrfix) with logo title
+*   8b1c401 (HEAD -> iss57, master) Merge remote-track
+|\
+| * f102b3e (origin/master, origin/HEAD) menu
+* | 113ef79 change readme
+|/
+*   117373c with issue 30 (logo)
+|\
+| * 4d869f3 (second/issue30, origin/issue30) logo resi
+* | 8c854c1 (second/hf200, origin/hf200) hf200 (requir
+|/
+*   2dac65b with issue 20
+|\
+| * ffa22b5 (second/issue21, origin/issue21) Main foru
+| * 4f60d6a forum
+* | 56ac931 issue 154 (eng)
+|/
+*   d0bba87 Merge branch 'issue20'
+|\
+| * 94a37d7 issue 20 (with footer)
+* | 16c87d9 hf153 (h1->h2)
+|/
+
+Thunderobot@DESKTOP-O2G7C9A MINGW64 /C/Users/Thunderobе/wsc (iss57)
+$ git commit
+On branch iss57
+nothing to commit, working tree clean
+
+Thunderobot@DESKTOP-O2G7C9A MINGW64 /C/Users/Thunderobе/wsc (iss57)
+$ git diff iss57
+
+Thunderobot@DESKTOP-O2G7C9A MINGW64 /C/Users/Thunderobе/wsc (iss57)
+$ git diff
+diff --git a/page.html b/page.html
+index fc9bfb2..de2540a 100644
+--- a/page.html
++++ b/page.html
+@@ -3,9 +3,9 @@
+ <head>
+ </head>
+ <body>
+-       <h1>Forum Page </h1>
+-       <h2>Форум</h2>
+-       <h3>Основной</h3>
++       <h1>Forum Page 3 </h1>
++       <h2>Форум 3</h2>
++       <h3>Основной 2</h3>
+
+ </body>
+
+
+Thunderobot@DESKTOP-O2G7C9A MINGW64 /C/Users/Thunderobе/wsc (iss57)
+$ git checkout master
+Switched to branch 'master'
+M       page.html
+Your branch is ahead of 'origin/master' by 2 commits.
+  (use "git push" to publish your local commits)
+
+Thunderobot@DESKTOP-O2G7C9A MINGW64 /C/Users/Thunderobе/wsc (master)
+$ ^C
+
+Thunderobot@DESKTOP-O2G7C9A MINGW64 /C/Users/Thunderobе/wsc (master)
+$ git checkout -b hotfix
+Switched to a new branch 'hotfix'
+
+Thunderobot@DESKTOP-O2G7C9A MINGW64 /C/Users/Thunderobе/wsc (hotfix)
+$ git log
+commit 8b1c401516fbe4aa6ca2e434fd576c93a3d2e89c (HEAD
+Merge: 113ef79 f102b3e
+Author: Sergey Shuykov <sergey@shuykov.ru>
+Date:   Sun Jan 21 12:37:30 2018 +0300
+
+    Merge remote-tracking branch 'origin/master'
+
+commit f102b3e824bb6382211fe5484def9e8f522d5ffe (origi
+Author: Sergey Shuykov <sshuykov@specialist.ru>
+Date:   Sun Jan 21 12:33:41 2018 +0300
+
+    menu
+
+commit 113ef7946ca0981d7d7a2f916aec8d4d21d8d736
+Author: Sergey Shuykov <sergey@shuykov.ru>
+Date:   Sun Jan 21 12:29:21 2018 +0300
+
+    change readme
+
+commit 117373c7435267ca33f30318ffa30fc381ed79ac
+Merge: 8c854c1 4d869f3
+Author: Sergey Shuykov <sshuykov@specialist.ru>
+Date:   Sun Jan 21 11:36:39 2018 +0300
+:
+commit 8b1c401516fbe4aa6ca2e434fd576c93a3d2e89c (HEAD
+Merge: 113ef79 f102b3e
+Author: Sergey Shuykov <sergey@shuykov.ru>
+Date:   Sun Jan 21 12:37:30 2018 +0300
+
+    Merge remote-tracking branch 'origin/master'
+
+commit f102b3e824bb6382211fe5484def9e8f522d5ffe (origi
+Author: Sergey Shuykov <sshuykov@specialist.ru>
+Date:   Sun Jan 21 12:33:41 2018 +0300
+
+    menu
+
+commit 113ef7946ca0981d7d7a2f916aec8d4d21d8d736
+Author: Sergey Shuykov <sergey@shuykov.ru>
+Date:   Sun Jan 21 12:29:21 2018 +0300
+
+    change readme
+
+commit 117373c7435267ca33f30318ffa30fc381ed79ac
+Merge: 8c854c1 4d869f3
+Author: Sergey Shuykov <sshuykov@specialist.ru>
+Date:   Sun Jan 21 11:36:39 2018 +0300
+
+Thunderobot@DESKTOP-O2G7C9A MINGW64 /C/Users/Thunderobx)
+$ git log --oneline --all --graph
+* fc6c790 (second/serverfix, second/master, origin/serogo title
+*   8b1c401 (HEAD -> hotfix, master, iss57) Merge remo
+|\
+| * f102b3e (origin/master, origin/HEAD) menu
+* | 113ef79 change readme
+|/
+*   117373c with issue 30 (logo)
+|\
+| * 4d869f3 (second/issue30, origin/issue30) logo resi
+* | 8c854c1 (second/hf200, origin/hf200) hf200 (requir
+|/
+*   2dac65b with issue 20
+|\
+| * ffa22b5 (second/issue21, origin/issue21) Main foru
+| * 4f60d6a forum
+* | 56ac931 issue 154 (eng)
+|/
+*   d0bba87 Merge branch 'issue20'
+|\
+| * 94a37d7 issue 20 (with footer)
+* | 16c87d9 hf153 (h1->h2)
+|/
+
+Thunderobot@DESKTOP-O2G7C9A MINGW64 /C/Users/Thunderobx)
+$ git commit
+On branch hotfix
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be comm
+  (use "git restore <file>..." to discard changes in w
+        modified:   page.html
+
+no changes added to commit (use "git add" and/or "git
+
+Thunderobot@DESKTOP-O2G7C9A MINGW64 /C/Users/Thunderobx)
+$ git add .
+
+Thunderobot@DESKTOP-O2G7C9A MINGW64 /C/Users/Thunderobx)
+$ git status
+On branch hotfix
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   page.html
+
+
+Thunderobot@DESKTOP-O2G7C9A MINGW64 /C/Users/Thunderobx)
+$ git commit
+[hotfix 6d98875] Page.html
+ 1 file changed, 3 insertions(+), 3 deletions(-)
+
+Thunderobot@DESKTOP-O2G7C9A MINGW64 /C/Users/Thunderobx)
+$ git checkout mster
+error: pathspec 'mster' did not match any file(s) know
+
+Thunderobot@DESKTOP-O2G7C9A MINGW64 /C/Users/Thunderobx)
+$ git checkout master
+Switched to branch 'master'
+Your branch is ahead of 'origin/master' by 2 commits.
+  (use "git push" to publish your local commits)
+
+Thunderobot@DESKTOP-O2G7C9A MINGW64 /C/Users/Thunderobr)
+$ git merge hotfix
+Updating 8b1c401..6d98875
+Fast-forward
+ page.html | 6 +++---
+ 1 file changed, 3 insertions(+), 3 deletions(-)
+
+Thunderobot@DESKTOP-O2G7C9A MINGW64 /C/Users/Thunderob
+$ git merge iss57
+Already up to date.
+
+Thunderobot@DESKTOP-O2G7C9A MINGW64 /C/Users/Thunderob
+$ git log --oneline --all --graph
+* 6d98875 (HEAD -> master, hotfix) Page.html
+| * fc6c790 (second/serverfix, second/master, origin/se
+|/
+*   8b1c401 (iss57) Merge remote-tracking branch 'orig
+|\
+| * f102b3e (origin/master, origin/HEAD) menu
+* | 113ef79 change readme
+|/
+*   117373c with issue 30 (logo)
+|\
+| * 4d869f3 (second/issue30, origin/issue30) logo resi
+* | 8c854c1 (second/hf200, origin/hf200) hf200 (requir
+|/
+*   2dac65b with issue 20
+|\
+| * ffa22b5 (second/issue21, origin/issue21) Main foru
+| * 4f60d6a forum
+* | 56ac931 issue 154 (eng)
+|/
+*   d0bba87 Merge branch 'issue20'
+|\
+| * 94a37d7 issue 20 (with footer)
+
+Thunderobot@DESKTOP-O2G7C9A MINGW64 /C/Users/Thunderob
+$ git merge hotfix
+Already up to date.
+
+Thunderobot@DESKTOP-O2G7C9A MINGW64 /C/Users/Thunderob
+$ git branch -d  113ef79
+error: branch '113ef79' not found
+
+Thunderobot@DESKTOP-O2G7C9A MINGW64 /C/Users/Thunderob
+$ git branch -d iss57
+Deleted branch iss57 (was 8b1c401).
+
+Thunderobot@DESKTOP-O2G7C9A MINGW64 /C/Users/Thunderob
+$ git log --oneline --all --graph
+* 6d98875 (HEAD -> master, hotfix) Page.html
+| * fc6c790 (second/serverfix, second/master, origin/s
+|/
+*   8b1c401 Merge remote-tracking branch 'origin/maste
+|\
+| * f102b3e (origin/master, origin/HEAD) menu
+* | 113ef79 change readme
+|/
+*   117373c with issue 30 (logo)
+|\
+| * 4d869f3 (second/issue30, origin/issue30) logo resi
+* | 8c854c1 (second/hf200, origin/hf200) hf200 (requir
+|/
+*   2dac65b with issue 20
+|\
+| * ffa22b5 (second/issue21, origin/issue21) Main foru
+| * 4f60d6a forum
+* | 56ac931 issue 154 (eng)
+|/
+*   d0bba87 Merge branch 'issue20'
+|\
+| * 94a37d7 issue 20 (with footer)
+* | 16c87d9 hf153 (h1->h2)
+|/
+* 2ae90b6 with gitignore
+| * 6cc4588 (second/test, origin/test) with footer
+|/
+| * 4f5d1ff (second/ver.1.0, origin/ver.1.0) last
+|/
+* 63ecb04 (tag: ver.1.3-lw, tag: ver.1.3, second/test2
+* 93c34d7 with page.html
+* bfc69c2 with updated robots.txt
+* 79cfbd2 with robots.txt
+* 3a1c684 (tag: ver.1.0) first update
+* dbfc836 (tag: ver.0.99) Initial version of my site
+
+Thunderobot@DESKTOP-O2G7C9A MINGW64 /C/Users/Thunderob
+$ git checkout -b iss58
+Switched to a new branch 'iss58'
+
+Thunderobot@DESKTOP-O2G7C9A MINGW64 /C/Users/Thunderob
+$ git status
+On branch iss58
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be comm
+  (use "git restore <file>..." to discard changes in w
+        modified:   index.htm
+
+no changes added to commit (use "git add" and/or "git
+
+Thunderobot@DESKTOP-O2G7C9A MINGW64 /C/Users/Thunderob
+$ git commit -a
+[iss58 102e8fd] modified
+ 1 file changed, 1 insertion(+)
+
+Thunderobot@DESKTOP-O2G7C9A MINGW64 /C/Users/Thunderob
+$ git switch master
+Switched to branch 'master'
+Your branch is ahead of 'origin/master' by 3 commits.
+  (use "git push" to publish your local commits)
+
+Thunderobot@DESKTOP-O2G7C9A MINGW64 /C/Users/Thunderob
+$ git checkout -b iss60
+Switched to a new branch 'iss60'
+
+Thunderobot@DESKTOP-O2G7C9A MINGW64 /C/Users/Thunderob
+$ git status
+On branch iss60
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be comm
+  (use "git restore <file>..." to discard changes in w
+        modified:   page.html
+
+no changes added to commit (use "git add" and/or "git
+
+Thunderobot@DESKTOP-O2G7C9A MINGW64 /C/Users/Thunderob
+$ git commit -a
+[iss60 a64ee53] html
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+Thunderobot@DESKTOP-O2G7C9A MINGW64 /C/Users/Thunderob
+$ git checkout master
+Switched to branch 'master'
+Your branch is ahead of 'origin/master' by 3 commits.
+  (use "git push" to publish your local commits)
+
+Thunderobot@DESKTOP-O2G7C9A MINGW64 /C/Users/Thunderob
+$ git merge iss58
+Updating 6d98875..102e8fd
+Fast-forward
+ index.htm | 1 +
+ 1 file changed, 1 insertion(+)
+
+Thunderobot@DESKTOP-O2G7C9A MINGW64 /C/Users/Thunderob
+$ git checkout iss60
+Switched to branch 'iss60'
+
+Thunderobot@DESKTOP-O2G7C9A MINGW64 /C/Users/Thunderob
+$ git rebase master
+Successfully rebased and updated refs/heads/iss60.
+
+Thunderobot@DESKTOP-O2G7C9A MINGW64 /C/Users/Thunderob
+$ git checkout master
+Switched to branch 'master'
+Your branch is ahead of 'origin/master' by 4 commits.
+  (use "git push" to publish your local commits)
+
+Thunderobot@DESKTOP-O2G7C9A MINGW64 /C/Users/Thunderob
+$ git merge iss60
+Updating 102e8fd..5ad62f0
+Fast-forward
+ page.html | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+Thunderobot@DESKTOP-O2G7C9A MINGW64 /C/Users/Thunderob
+$ git log --oneline --all --graph
+* 5ad62f0 (HEAD -> master, iss60) html
+* 102e8fd (iss58) modified
+* 6d98875 (hotfix) Page.html
+| * fc6c790 (second/serverfix, second/master, origin/so title
+|/
+*   8b1c401 Merge remote-tracking branch 'origin/maste
+|\
+| * f102b3e (origin/master, origin/HEAD) menu
+* | 113ef79 change readme
+|/
+*   117373c with issue 30 (logo)
+|\
+| * 4d869f3 (second/issue30, origin/issue30) logo resi
+* | 8c854c1 (second/hf200, origin/hf200) hf200 (requir
+|/
+*   2dac65b with issue 20
+|\
+| * ffa22b5 (second/issue21, origin/issue21) Main foru
+| * 4f60d6a forum
+* | 56ac931 issue 154 (eng)
+|/
+*   d0bba87 Merge branch 'issue20'
+|\
+| * 94a37d7 issue 20 (with footer)
+* | 16c87d9 hf153 (h1->h2)
+|/
+* 2ae90b6 with gitignore
+| * 6cc4588 (second/test, origin/test) with footer
+|/
+| * 4f5d1ff (second/ver.1.0, origin/ver.1.0) last
+|/
+* 63ecb04 (tag: ver.1.3-lw, tag: ver.1.3, second/test2x.htm
+* 93c34d7 with page.html
+* bfc69c2 with updated robots.txt
+* 79cfbd2 with robots.txt
+* 3a1c684 (tag: ver.1.0) first update
+
+Thunderobot@DESKTOP-O2G7C9A MINGW64 /C/Users/Thunderob
+$ git branch -d hotfix
+Deleted branch hotfix (was 6d98875).
+
+Thunderobot@DESKTOP-O2G7C9A MINGW64 /C/Users/Thunderob
+$ git remote
+origin
+second
+
+Thunderobot@DESKTOP-O2G7C9A MINGW64 /C/Users/Thunderober)
+$ git remote add origin https://github.com/matveiprytk
+error: remote origin already exists.
+
+Thunderobot@DESKTOP-O2G7C9A MINGW64 /C/Users/Thunderober)
+$ git remote add first https://github.com/matveiprytko
+
+Thunderobot@DESKTOP-O2G7C9A MINGW64 /C/Users/Thunderober)
+$ git remote
+first
+origin
+second
+
+Thunderobot@DESKTOP-O2G7C9A MINGW64 /C/Users/Thunderober)
+$ git remote -v
+first   https://github.com/matveiprytkov/ws.git (fetch
+first   https://github.com/matveiprytkov/ws.git (push)
+origin  C:/Git0114/ws (fetch)
+origin  C:/Git0114/ws (push)
+second  C:/Git0114/ws (fetch)
+second  C:/Git0114/ws (push)
+
+Thunderobot@DESKTOP-O2G7C9A MINGW64 /C/Users/Thunderober)
+$ git remote show first
+* remote first
+  Fetch URL: https://github.com/matveiprytkov/ws.git
+  Push  URL: https://github.com/matveiprytkov/ws.git
+  HEAD branch: (unknown)
+
+Thunderobot@DESKTOP-O2G7C9A MINGW64 /C/Users/Thunderober)
+$ git push -u first master
+Enumerating objects: 70, done.
+Counting objects: 100% (70/70), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (63/63), done.
+Writing objects: 100% (70/70), 11.45 KiB | 1.27 MiB/s,
+Total 70 (delta 32), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (32/32), done.
+To https://github.com/matveiprytkov/ws.git
+ * [new branch]      master -> master
+branch 'master' set up to track 'first/master'.
+
+Thunderobot@DESKTOP-O2G7C9A MINGW64 /C/Users/Thunderober)
+$
